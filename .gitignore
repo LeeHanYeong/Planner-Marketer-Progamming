@@ -8,6 +8,7 @@ secrets.tar
 node_modules
 bower_components*
 *.pickle
+*.xlsx
 
 # CSS files
 static/css/
