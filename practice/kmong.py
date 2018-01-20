@@ -86,7 +86,7 @@ def get_categories(ask=True, refresh=False):
 
     url = 'https://kmong.com/'
     response = requests.get(url)
-    soup = BeautifulSoup(response.content, 'lxml')
+    soup = BeautifulSoup(response.content)
     categories = [Category(title='전체', index=0, pk=0, url='', sub_categories=[])]
     for index, item in enumerate(soup.select('div.category-wrapper > .category-item')):
         if item.select_one('a'):
@@ -101,7 +101,7 @@ def get_categories(ask=True, refresh=False):
                 sub_categories=[],
             )
             response_category = requests.get(category.url)
-            soup_category = BeautifulSoup(response_category.content, 'lxml')
+            soup_category = BeautifulSoup(response_category.content)
             for sub_index, sub_item in enumerate(
                     soup_category.select('li.category-list-item.sub-category')):
                 url_sub = sub_item.select_one('a')['href']
@@ -170,7 +170,7 @@ def get_works_last_page_number(category):
     :return:
     """
     response = requests.get(category.url)
-    soup = BeautifulSoup(response.content, 'lxml')
+    soup = BeautifulSoup(response.content)
     return int(soup.select('ul.pagination > li')[-2].get_text(strip=True))
 
 
@@ -187,7 +187,7 @@ def get_page_work_dict(category, page_number):
         'random': '1000',
     }
     response = requests.get(category.url, params=params)
-    soup = BeautifulSoup(response.content, 'lxml')
+    soup = BeautifulSoup(response.content)
     item_list = soup.select('#gigListContainer .gig-wrapper-default')
     work_dict = {}
     for item in item_list:

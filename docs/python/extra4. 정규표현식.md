@@ -230,3 +230,36 @@ m = re.match(r'<.*>', html)
 	> ex) b[eca]me
 
 4. `re.sub`를 사용해서 `,`로 구분된 앞/뒤 단어에 대해 앞단어는 대문자화 시키고, 뒷단어는 대괄호로 감싼다. 이 과정에서, 각각의 앞/뒤에 `before`, `after`그룹 이름을 사용한다.
+
+
+```
+We have seen thee, queen of cheese,
+Lying quietly at your ease,
+Gently fanned by evening breeze,
+Thy fair form no flies dare seize.
+
+All gaily dressed soon you'll go
+To the great Provincial show,
+To be admired by many a beau
+In the city of Toronto.
+
+Cows numerous as a swarm of bees,
+Or as the leaves upon the trees,
+It did require to make thee please,
+And stand unrivalled, queen of cheese.
+
+May you not receive a scar as
+We have heard that Mr. Harris
+Intends to send you off as far as
+The great world's show at Paris.
+
+Of the youth beware of these,
+For some of them might rudely squeeze
+And bite your cheek, then songs or glees
+We could not sing, oh! queen of cheese.
+
+We'rt thou suspended from balloon,
+You'd cast a shade even at noon,
+Folks would think it was the moon
+About to fall and crush them soon.
+```
