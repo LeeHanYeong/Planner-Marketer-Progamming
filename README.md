@@ -33,3 +33,17 @@
 
 **크롤링 결과를 엑셀파일로 정리**  
 ![excel](assets/excel.png)
+
+
+## 명령어
+
+### Jupyter notebook 실행
+
+윈도 사용자는 `시작->실행->powershell` 로 터미널 실행
+
+맥 사용자는 오른쪽 위 돋보기모양 아이콘 누른 후 `terminal`입력 후 엔터로 터미널 실행
+
+```
+cd ~/projects/python
+jupyter notebook
+```
