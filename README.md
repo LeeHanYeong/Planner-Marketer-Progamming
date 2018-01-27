@@ -26,6 +26,10 @@
 - BeautifulSoup 라이브러리를 이용해 파이썬 데이터로 번역(파싱)하기
 - Excel 라이브러리 XlsxWriter 를 사용해 파이썬 데이터를 엑셀파일로 출력하기
 
+- [requests 공식문서](http://docs.python-requests.org/en/master/)  
+- [BeautifulSoup 한글문서](https://cryptosan.github.io/pythondocuments/documents/beautifulsoup4/)  
+- [XlsxWriter 공식문서](https://xlsxwriter.readthedocs.io/)
+
 ## 실습 결과물
 
 **외부 사이트**  
@@ -40,7 +44,7 @@
 ### (맥) 필요 패키지 설치 명령어
 
 ```
-pip3 install requests BeautifulSoup4 XlsxWriter
+pip3 install requests BeautifulSoup4 XlsxWriter pillow
 ```
 
 ### Jupyter notebook 실행
