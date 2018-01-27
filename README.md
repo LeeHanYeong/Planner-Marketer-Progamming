@@ -37,6 +37,12 @@
 
 ## 명령어
 
+### (맥) 필요 패키지 설치 명령어
+
+```
+pip3 install requests BeautifulSoup4 XlsxWriter
+```
+
 ### Jupyter notebook 실행
 
 윈도 사용자는 `시작->실행->powershell` 로 터미널 실행
