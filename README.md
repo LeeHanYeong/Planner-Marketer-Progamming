@@ -47,3 +47,18 @@
 cd ~/projects/python
 jupyter notebook
 ```
+
+### 프로젝트 폴더로 가는법
+
+#### 맥
+
+```
+cd ~/projects/python
+open .
+```
+
+#### 윈도
+
+```
+내 컴퓨터 -> C드라이브 -> 사용자 -> <자신이 쓰고있는 계정명> -> projects -> python
+```
